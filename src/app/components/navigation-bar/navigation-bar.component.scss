@@ -8,9 +8,10 @@ nav {
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #333;
+    background-color: #201f1fe8;
+    border-radius: 5px 5px 5px 5px;
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
     padding: 10px 0;
     z-index: 1000;
 }
@@ -36,6 +37,7 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #5757575e;
+    border-radius: 5px 5px 5px 5px;
 }
 
 .emoji {

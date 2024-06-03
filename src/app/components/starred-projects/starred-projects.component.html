@@ -1,3 +1,34 @@
 <main>
-<p>starred-projects works!</p>
+    <div class="container">
+        <div class="project-card" (click)="onFlipCard('todolist')">
+            @if(todoCardFlipped) {
+                <div class="card-back">Lorem ipsum</div>
+            } @else {
+                <div class="card-front">To Do List</div>
+            }
+        </div>
+        <div class="project-card" (click)="onFlipCard('musicapi')">
+            @if(musicApiCardFlipped) {
+                <div class="card-back">Lorem ipsum</div>
+            } @else {
+                <div class="card-front">Music API</div>
+            }
+        </div>
+    </div>
+    <div class="container">
+        <div class="project-card" (click)="onFlipCard('flickpicker')">
+            @if(flickPickerFlipped) {
+                <div class="card-back">Lorem ipsum</div>
+            } @else {
+                <div class="card-front">Flick Picker</div>
+            }
+        </div>
+        <div class="project-card" (click)="onFlipCard('diceordie')">
+            @if(dicerOrDieFlipped) {
+                <div class="card-back">Lorem ipsum</div>
+            } @else {
+                <div class="card-front">Dice or Die</div>
+            }
+        </div>
+    </div>
 </main>
