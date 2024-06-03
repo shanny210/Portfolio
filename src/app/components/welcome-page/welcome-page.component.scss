@@ -164,7 +164,7 @@ main {
 
 .animated-text span::before {
     content: "Developer";
-    color: #f8a6ef;
+    color: #ff5b9d;
     animation: words 20s infinite;
 }
 
@@ -174,7 +174,7 @@ main {
     width: calc(100% + 8px);
     height: 100%;
     background-color: black;
-    border-left: 2px solid #f8a6ef;
+    border-left: 2px solid #ff5b9d;
     right: -8px;
     animation: cursor .8s infinite, typing 20s steps(14) infinite;
 }
