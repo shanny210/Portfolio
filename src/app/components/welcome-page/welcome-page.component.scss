@@ -1,6 +1,18 @@
 // background: linear-gradient(45deg, #008CBA, #4FC3F7); animation-delay: 0s;
 main {
     width: 900px;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.upper-code-block, .text-block, .lower-code-block {
+    min-width: 620px;
 }
 
 .rectangle {
