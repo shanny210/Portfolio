@@ -1,26 +1,118 @@
 // background: linear-gradient(45deg, #008CBA, #4FC3F7); animation-delay: 0s;
-
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    height: 100vh;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding-left: 20px;
+main {
+    width: 900px;
 }
 
-.bg-gradient-green-blue {
-    background: linear-gradient(45deg, #00ff11, #4FC3F7); animation-delay: 0s;
+.rectangle {
+    height: 15px;
 }
 
-.bg-gradient-turquoise-purple {
-    background: linear-gradient(45deg, #4FC3F7, #9f00ca); animation-delay: 0s;
+.xl-width {
+    width: 400px;
 }
 
-.bg-gradient-pink-yellow {
-    background: linear-gradient(45deg, #ff00dd, #f7f14f); animation-delay: 0s;
+.l-width {
+    width: 240px;
+}
+
+.lm-width {
+    width: 220px;
+}
+
+.m-width {
+    width: 160px;
+}
+
+.ms-width {
+    width: 140px;
+}
+
+.s-width {
+    width: 120px;
+}
+
+.xs-width {
+    width: 80px;
+}
+
+.bg-gradient-line-1-col-1 {
+    background: linear-gradient(to right, #038526, #6cbd4a);
+}
+
+.bg-gradient-line-1-col-2 {
+    background: linear-gradient(to right, #6cbd4a, #e2fd72);
+}
+
+.bg-gradient-line-2-col-1 {
+    background: linear-gradient(to right, #136c29, #ddfeb1);
+}
+
+.bg-gradient-line-3-col-1 {
+    background: linear-gradient(to right, #13562a, #518a59);
+}
+
+.bg-gradient-line-3-col-2 {
+    background: linear-gradient(to right, #518a59, #93c18b);
+}
+
+.bg-gradient-line-3-col-3 {
+    background: linear-gradient(to right, #93c18b, #dbfec2);
+}
+
+.bg-gradient-line-4-col-1 {
+    background: linear-gradient(to right, #134330, #518578);
+}
+
+.bg-gradient-line-4-col-2 {
+    background: linear-gradient(to right, #518578, #96cec9);
+}
+
+.bg-gradient-line-4-col-3 {
+    background: linear-gradient(to right, #96cec9, #c4ffff);
+}
+
+.bg-gradient-line-5-col-1 {
+    background: linear-gradient(to right, #00253f, #72fdfe);
+}
+
+.bg-gradient-line-6-col-1 {
+    background: linear-gradient(to right, #291b45, #19c7e3);
+}
+
+.bg-gradient-line-7-col-1 {
+    background: linear-gradient(to right, #33143c, #345b8a);
+}
+
+.bg-gradient-line-7-col-2 {
+    background: linear-gradient(to right, #345b8a, #35abe1);
+}
+
+.bg-gradient-line-8-col-1 {
+    background: linear-gradient(to right, #441037, #524873);
+}
+
+.bg-gradient-line-8-col-2 {
+    background: linear-gradient(to right, #524873, #628bbb);
+}
+
+.bg-gradient-line-8-col-3 {
+    background: linear-gradient(to right, #628bbb, #6fbff4);
+}
+
+.bg-gradient-line-9-col-1 {
+    background: linear-gradient(to right, #5a0824, #cbb7fb);
+}
+
+.bg-gradient-line-10-col-1 {
+    background: linear-gradient(to right, #76054b, #982481);
+}
+
+.bg-gradient-line-10-col-2 {
+    background: linear-gradient(to right, #982481, #bf49c0);
+}
+
+.bg-gradient-line-10-col-3 {
+    background: linear-gradient(to right, #bf49c0, #e36af9);
 }
 
 .row {
@@ -30,67 +122,92 @@ body {
     margin-bottom: 10px;
 }
 
-.circle {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: aqua;
+.square {
+    width: 15px;
+    height: 15px;
 }
 
-.rectangle {
-    height: 10px;
-    background-color: pink;
+.bg-gradient-line-1 {
+    background-color: #dbf970;
 }
 
-.xl-width {
-    width: 320px;
+.bg-gradient-line-4 {
+    background-color: #518578;
 }
 
-.l-width {
-    width: 160px;
+.bg-gradient-line-5 {
+    background-color: #00253f;
 }
 
-.lm-width {
-    width: 120px;
+.bg-gradient-line-6 {
+    background-color: #19c7e3;
 }
 
-.m-width {
-    width: 80px;
-}
-
-.ms-width {
-    width: 60px;
-}
-
-.s-width {
-    width: 40px;
-}
-
-.xs-width {
-    width: 20px;
+.bg-gradient-line-10 {
+    background-color: #982481;
 }
 
 .container {
     margin-bottom: 10px;
 }
 
-.type {
-    font-family: monospace;
-    color:#0000;
-    background:
-      linear-gradient(-90deg,white 5px,#0000 0) 10px 0,
-      linear-gradient(white 0 0) 0 0;
-    background-size:calc(var(--n)*1ch) 200%;
-    -webkit-background-clip:padding-box,text;
-    background-clip:padding-box,text;
-    background-repeat:no-repeat;
-    animation: 
-      b .7s infinite steps(1),   
-      t calc(var(--n)*.3s) steps(var(--n)) forwards;
-  }
-  @keyframes t{
-    from {background-size:0 200%}
-  }
-  @keyframes b{
-    50% {background-position:0 -100%,0 0}
-  }
+/***** Text Animation *****/
+.animated-text {
+    font-size: 34px;
+    font-weight: 600;
+    min-height: 200px;
+}
+
+.animated-text span {
+    position: relative;
+}
+
+.animated-text span::before {
+    content: "Developer";
+    color: #f8a6ef;
+    animation: words 20s infinite;
+}
+
+.animated-text span::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: black;
+    border-left: 2px solid #f8a6ef;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to {
+        border-left: 2px solid black;
+    }
+}
+
+@keyframes words {
+    0%, 20%{
+        content: "Developer";
+    }
+    21%, 40%{
+        content: "Designer";
+    }
+    41%, 60%{
+        content: "Tech Enthusiast";
+    }
+    61%, 80%{
+        content: "Passionated Pixel Pusher";
+    }
+    81%, 100%{
+        content: "Gamer";
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95% {
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,80%,85% {
+        width: calc(100% + 8px);
+    }
+}
