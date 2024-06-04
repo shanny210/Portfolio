@@ -10,14 +10,44 @@ main {
     justify-content: center;
 }
 
-.container {
+  .box {
+    width: 80%;
     height: 60vh;
-    width: 60%;
-    background-color: #201f1fe8;
+    display: grid;
+    place-content: center;
+    
+    --border-angle: 0turn;
+    --main-bg: conic-gradient(
+        from var(--border-angle),
+        #101010,
+        #101010 5%,
+        #101010 60%,
+        #101010 95%
+      );
+    
+    border: solid 0.5px transparent;
     border-radius: 5px 5px 5px 5px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+    
+    --gradient-border: conic-gradient(from var(--border-angle), transparent 25%, #ffffff, #ffffff 99%, transparent);
+    
+    background: 
+      var(--main-bg) padding-box,
+      var(--gradient-border) border-box, 
+      var(--main-bg) border-box;
+    
+    background-position: center center;
+  
+    animation: bg-spin 3s linear infinite;
+    @keyframes bg-spin {
+      to {
+        --border-angle: 1turn;
+      }
+    }
+  }
+  
+  @property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+  }
+  
