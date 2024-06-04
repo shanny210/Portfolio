@@ -44,6 +44,7 @@ nav ul li a:hover {
 .emoji {
 display: inline-block;
 transition: transform 0.2s;
+margin-right: 5px;
 }
 
 li:hover .emoji {
@@ -55,10 +56,10 @@ li:hover .emoji {
         transform: rotate(0deg);
     }
     25% {
-        transform: rotate(-5deg);
+        transform: rotate(-10deg);
     }
     75% {
-        transform: rotate(5deg);
+        transform: rotate(10deg);
     }
 }
 
