@@ -40,21 +40,12 @@ main {
     background-color: #2d2c2ce8;
 }
 
-.project-card.card-back {
-    background-color: red;
-}
-
 .project-card .card-front {
     position: absolute;
 }
 
-.container .project-card div.card-back {
+.project-card .card-back {
     transform: rotateY(90deg);
-}
-
-@keyframes flip {
-    0% { transform: rotateY(0deg) }
-    100% { transform: rotateY(90deg) }
 }
 
 .project-card:hover .card-front {
@@ -63,4 +54,9 @@ main {
 
 .project-card:hover .card-back {
     animation: flip 0.2s 0.2s ease-out forwards reverse;
+}
+
+@keyframes flip {
+    0% { transform: rotateY(0deg) }
+    100% { transform: rotateY(90deg) }
 }
