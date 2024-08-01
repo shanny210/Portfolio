@@ -5,11 +5,12 @@ import { WelcomePageComponent } from './components/welcome-page/welcome-page.com
 import { TechStackComponent } from './components/tech-stack/tech-stack.component';
 import { StarredProjectsComponent } from './components/starred-projects/starred-projects.component';
 import { NavigationBarComponent } from './components/navigation-bar/navigation-bar.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, NavigationBarComponent, WelcomePageComponent, TechStackComponent, StarredProjectsComponent],
+  imports: [CommonModule, RouterOutlet, NavigationBarComponent, WelcomePageComponent, TechStackComponent, StarredProjectsComponent, TranslateModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
